@@ -1,0 +1,18 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "images/github.png",
+      "default_popup": "popup.html"
+   },
+   "content_security_policy": "script-src 'self' https://www.gstatic.com/ https://www.googleapis.com; object-src 'self'",
+   "description": "This extension shows notifications for your Github repository (when someone stars your repo, opens an issue or a pull request)",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAy9/6epycgVMBH44RhdHTQMU05JKbrfsEJ26MAvEjcACc3k6o72L5HKKGVPjtKr18slhsGcelzLK39PMpn+4C4CVArdN300Y7R5zoe2B5UuR/kaY9nPSWjk+ITiGFBMmp0DUtqaVuLuP/R56BaU5N073l2D2GVHZciDKN7DedhmlybOjHn9lrYETaxX0JqldXiqd5D2cUnzUfhHqlKG0hbxdQKKHC9MlITNRcI4srdIjq5iwAfuoHfrHdNFnN+Cg9CiR0tyRaUeAu2+pWbIpR0Qr/VSuZQVSZOk3PLAd4hOU5WKusDps7AbCXCnc3zICoHETEdJp75nRS3wzD7lkDlQIDAQAB",
+   "manifest_version": 2,
+   "name": "Github Notifier",
+   "permissions": [ "background", "gcm", "storage", "notifications", "https://asia-northeast1-notifier-5de7f.cloudfunctions.net/*" ],
+   "short_name": "Github Notify",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.16"
+}
